@@ -15,7 +15,7 @@ div.tabComponent label {
 	padding: 10px;
 	cursor: pointer;
 	user-select: none;
-	transition: background .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	color: #b54ef3;
 }
 
@@ -24,6 +24,10 @@ div.tabComponent input[type="radio"]:checked + label {
 	background-color: #b54ef3;
 	color: white;
 	border-radius: 7px;
+}
+
+div.tabComponent input[type="radio"]:not(:checked) + label:hover {
+	color: #7934a2;
 }
 
 /* Selector #4 */
