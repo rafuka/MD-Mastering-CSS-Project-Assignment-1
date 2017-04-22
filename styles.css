@@ -34,7 +34,7 @@ div.tabComponent div.tab-content {
 	padding: 10px;
 	width: 100%;
 	font-weight: 100; 
-	transition: all .2s ease-in-out;
+	transition: top .2s ease-in-out, opacity .1s ease-in-out;
 }
 
 /* Selector #5 */
