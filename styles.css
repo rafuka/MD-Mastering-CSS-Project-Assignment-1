@@ -1,1 +1,46 @@
+div.tabComponent {
+	position: relative;
+	padding: 20px;
+	font-family: 'Futura', sans-serif;
+	border-bottom: 1px solid #b54ef3;
+}
+
+/* Selector #1  */
+div.tabComponent input {
+	display: none;
+}
+
+/* Selector #2  */
+div.tabComponent label {
+	padding: 10px;
+	cursor: pointer;
+	user-select: none;
+	transition: all .2s ease-in-out;
+	color: #b54ef3;
+}
+
+/* Selector #3 */
+div.tabComponent input[type="radio"]:checked + label {
+	background-color: #b54ef3;
+	color: white;
+	border-radius: 7px;
+}
+
+/* Selector #4 */
+div.tabComponent div.tab-content {
+	position: absolute;
+	top: 80px;
+	opacity: 0;
+	padding: 10px;
+	width: 100%;
+	font-weight: 100; 
+	transition: all .2s ease-in-out;
+}
+
+/* Selector #5 */
+div.tabComponent input[type="radio"]:checked + label + div.tab-content {
+	opacity: 1;
+	top: 50px;
+}
+
 
